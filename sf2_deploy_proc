@@ -1,0 +1,40 @@
+bin/vendors install
+bin/vendors lock
+fin vendor -name .git -type d | xargs rm -rf
+
+bin/vendors install --reinstall
+
+
+
+git init 
+git add .
+git commit -m 'inital commit'
+
+
+git branch
+git branch [new branch name]
+git checkout [branch name]
+==> git branch -b [new branch name]
+(edit files ...)
+git add .
+git commit
+
+
+git checkout master
+(edit files ...)
+git commit -a -m ''
+
+
+git merge [new branch name]
+git branch -d [tmp branch name]
+
+
+
+
+# contributing on github
+git clone
+cd project
+(edit files)
+git add (files)
+git commit -m ''
+git push origin master
